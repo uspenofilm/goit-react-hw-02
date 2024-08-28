@@ -1,6 +1,8 @@
+import css from "../Options/Options.module.css";
+
 export default function Options({ onUpdate, totalFeedback, setClicks }) {
   return (
-    <div>
+    <div className={css.optionsContainer}>
       <button
         onClick={() => {
           onUpdate("good");

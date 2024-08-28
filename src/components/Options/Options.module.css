@@ -1,0 +1,14 @@
+.optionsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 6px;
+}
+
+.optionsContainer button {
+  padding: 4px 6px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}

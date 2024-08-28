@@ -1,0 +1,9 @@
+.feedbackContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+  font-family: Arial, sans-serif;
+}

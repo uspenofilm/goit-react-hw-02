@@ -7,8 +7,6 @@ import { useEffect } from "react";
 import css from "./App.module.css";
 
 export default function App() {
-  // const [clicks, setClicks] = useState({ good: 0, neutral: 0, bad: 0 });
-
   const [clicks, setClicks] = useState(() => {
     const savedClicks = window.localStorage.getItem("saved-clicks");
     if (savedClicks !== null) {
@@ -28,7 +26,7 @@ export default function App() {
   const positiveFeedback = Math.round((clicks.good / totalFeedback) * 100);
 
   return (
-    <>
+    <div className={css.container}>
       <Description></Description>
       <Options
         onUpdate={updateFeedback}
@@ -45,6 +43,6 @@ export default function App() {
           positive={positiveFeedback}
         ></Feedback>
       )}
-    </>
+    </div>
   );
 }
